@@ -16,7 +16,7 @@ n_qubits = 20
 n_layer = 8
 n_time = 1
 n_check = 20
-iteration = 100
+iteration = 300
 model = 'All-X'
 
 print('model:', model)
