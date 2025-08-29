@@ -8,9 +8,6 @@ from math import pi
 from datetime import datetime
 import os
 
-seed = 0
-np.random.seed(seed)
-
 def f_n(weights, ansatz=None):
 
     return np.sum(ansatz(weights))
@@ -92,7 +89,7 @@ def gd_uniform(ansatz, circuit_name, qubits, n_params, gamma, gau_rate, noise_ga
 
 def gd_reduced(ansatz, circuit_name, qubits, n_params, gamma, gau_rate, noise_gamma, noise_rate, lr, iteration, n_time, n_check):
 
-    folder = "./"+circuit_name +"_"+ str(qubits) +"_"+ str(n_params)+"_gd_uniform"+"_"+str(noise_rate)
+    folder = "./"+circuit_name +"_"+ str(qubits) +"_"+ str(n_params)+"_gd_reduced_uniform"+"_"+str(noise_rate)
 
     a = np.random.uniform(-0.07*pi, 0.07*pi, size=n_time*n_params).reshape(n_time,n_params)
     if not os.path.exists(folder):
