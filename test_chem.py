@@ -78,18 +78,18 @@ n_params = 2*n_layer*n_qubits
 
 #noiseless
 optimizer.gd_ours(n_layer, cl_circuit, circuit_name, n_qubits, n_params, gamma, 0.01, 0, 0, 0.01, iteration, n_time, n_check, model)
-#optimizer.gd_ours(n_layer, cl_circuit, circuit_name, n_qubits, n_params, gamma, 0.1, 0, 0, 0.01, iteration, n_time, n_check)
-#optimizer.gd_ours(n_layer, cl_circuit, circuit_name, n_qubits, n_params, gamma, 1, 0, 0, 0.01, iteration, n_time, n_check)
-#optimizer.gd_ours(n_layer, cl_circuit, circuit_name, n_qubits, n_params, gamma, 10, 0, 0, 0.01, iteration, n_time, n_check)
-#optimizer.gd_ours(n_layer, cl_circuit, circuit_name, n_qubits, n_params, gamma, 100, 0, 0, 0.01, iteration, n_time, n_check)
+optimizer.gd_ours(n_layer, cl_circuit, circuit_name, n_qubits, n_params, gamma, 0.1, 0, 0, 0.01, iteration, n_time, n_check)
+optimizer.gd_ours(n_layer, cl_circuit, circuit_name, n_qubits, n_params, gamma, 1, 0, 0, 0.01, iteration, n_time, n_check)
+optimizer.gd_ours(n_layer, cl_circuit, circuit_name, n_qubits, n_params, gamma, 10, 0, 0, 0.01, iteration, n_time, n_check)
+optimizer.gd_ours(n_layer, cl_circuit, circuit_name, n_qubits, n_params, gamma, 100, 0, 0, 0.01, iteration, n_time, n_check)
 
 
 optimizer.gd_gaussian(cl_circuit, circuit_name, n_qubits, n_params, gamma, 0.01, 0, 0, 0.01, iteration, n_time, n_check)
-#optimizer.gd_gaussian(cl_circuit, circuit_name, n_qubits, n_params, gamma, 0.1, 0, 0, 0.01, iteration, n_time, n_check)
-#optimizer.gd_gaussian(cl_circuit, circuit_name, n_qubits, n_params, gamma, 1, 0, 0, 0.01, iteration, n_time, n_check)
-#optimizer.gd_gaussian(cl_circuit, circuit_name, n_qubits, n_params, gamma, 10, 0, 0, 0.01, iteration, n_time, n_check)
-#optimizer.gd_gaussian(cl_circuit, circuit_name, n_qubits, n_params, gamma, 100, 0, 0, 0.01, iteration, n_time, n_check)
-#optimizer.gd_zero(cl_circuit, circuit_name, n_qubits, n_params, gamma, 1, 0, 0, 0.01, iteration, n_time, n_check)
+optimizer.gd_gaussian(cl_circuit, circuit_name, n_qubits, n_params, gamma, 0.1, 0, 0, 0.01, iteration, n_time, n_check)
+optimizer.gd_gaussian(cl_circuit, circuit_name, n_qubits, n_params, gamma, 1, 0, 0, 0.01, iteration, n_time, n_check)
+optimizer.gd_gaussian(cl_circuit, circuit_name, n_qubits, n_params, gamma, 10, 0, 0, 0.01, iteration, n_time, n_check)
+optimizer.gd_gaussian(cl_circuit, circuit_name, n_qubits, n_params, gamma, 100, 0, 0, 0.01, iteration, n_time, n_check)
+optimizer.gd_zero(cl_circuit, circuit_name, n_qubits, n_params, gamma, 1, 0, 0, 0.01, iteration, n_time, n_check)
 optimizer.gd_uniform(cl_circuit, circuit_name, n_qubits, n_params, gamma, 1, 0, 0, 0.01, iteration, n_time, n_check)
 optimizer.gd_reduced(cl_circuit, circuit_name, n_qubits, n_params, gamma, 1, 0, 0, 0.01, iteration, n_time, n_check)
 '''
